@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
 
     const client = new OpenAI({
       baseURL: "https://integrate.api.nvidia.com/v1",
-      apiKey: "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"
+      apiKey: "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"
     });
 
     const completion = await client.chat.completions.create({
