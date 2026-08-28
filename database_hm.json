@@ -1,0 +1,226 @@
+[
+  {
+    "nama_produk": "HM BB 2001 (Flake Strip)",
+    "kategori": "Book Binding",
+    "viscosity_160c": "17.000-19.000",
+    "viscosity_180c": "8.000-12.000",
+    "softening_point": "105-110°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "Softening point dan viskositas paling tinggi diantara produk book binding",
+    "keunggulan": [
+      "Softening Point tinggi",
+      "Pengaplikasian pada mesin High Speed",
+      "Digunakan khusus book binding (Yoshino)",
+      "Pengembangan khusus untuk project UT"
+    ]
+  },
+  {
+    "nama_produk": "HM BB 2030 (Flake Strip)",
+    "kategori": "Book Binding",
+    "viscosity_160c": "12.000-16.000",
+    "viscosity_180c": "7.000-11.000",
+    "softening_point": "100-107°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point lebih rendah dibanding BB 2001",
+      "Pengaplikasian pada mesin Medium-High speed",
+      "Digunakan khusus book binding reguler (Yoshino)"
+    ]
+  },
+  {
+    "nama_produk": "HM BB 2070 (Flake Strip)",
+    "kategori": "Book Binding",
+    "viscosity_160c": "12.000-16.000",
+    "viscosity_180c": "7.000-10.000",
+    "softening_point": "80-90°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point rendah dibanding BB 2030",
+      "Pengaplikasian pada mesin Low-Medium speed",
+      "Digunakan khusus book binding reguler (Yoshino)"
+    ]
+  },
+  {
+    "nama_produk": "HM BB 2072",
+    "kategori": "Book Binding",
+    "viscosity_160c": "12.000-15.000",
+    "viscosity_180c": "6.000-9.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "HPP lebih tinggi dari HM BB 2001, viskositas lebih rendah dari HM BB 2001, softening point paling rendah, tekstur lebih lentur",
+    "keunggulan": [
+      "High quality untuk book binding low speed",
+      "Kelenturan sangat baik",
+      "Kekerasan rendah",
+      "Softening Point rendah"
+    ]
+  },
+    {
+    "nama_produk": "HM BB 2073",
+    "kategori": "Book Binding",
+    "viscosity_160c": "12.000-16.000",
+    "viscosity_180c": "7.000-10.000",
+    "softening_point": "80-90°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "Viskositas lebih rendah dari HM BB 2001, softening point paling rendah, tekstur lebih lentur",
+    "keunggulan": [
+      "High quality untuk book binding low speed",
+      "Kelenturan sangat baik",
+      "Kekerasan rendah",
+      "Softening Point rendah"
+    ]
+  },
+  {
+    "nama_produk": "HM SG 2170 (Flake Strip)",
+    "kategori": "Side Glue",
+    "viscosity_160c": "6.000-8.000",
+    "viscosity_180c": "3.000-5.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point rendah",
+      "Pengaplikasian pada mesin Roller",
+      "Digunakan khusus untuk Lem samping (Yoshino)"
+    ]
+  },
+  {
+    "nama_produk": "HM SG 2170 C (Flake Strip)",
+    "kategori": "Side Glue",
+    "viscosity_160c": "2.500-3.000",
+    "viscosity_180c": "800-1.400",
+    "softening_point": "60-70°C",
+    "warna": "Bening",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point paling rendah",
+      "Pengaplikasian pada mesin Roller maupun Nozzle",
+      "Digunakan khusus untuk Lem samping (Yoshino)"
+    ]
+  },
+  {
+    "nama_produk": "HM SG 2170 Y (Flake Strip)",
+    "kategori": "Side Glue",
+    "viscosity_160c": "6.000-8.000",
+    "viscosity_180c": "3.000-5.000",
+    "softening_point": "70-80°C",
+    "warna": "Kuning",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point rendah",
+      "Pengaplikasian pada mesin Roller maupun Nozzle",
+      "Digunakan khusus untuk Lem samping (Yoshino)"
+    ]
+  },
+  {
+    "nama_produk": "HM BP 2230 (Flake Strip)",
+    "kategori": "Book Pilung",
+    "viscosity_160c": "12.000-15.000",
+    "viscosity_180c": "6.000-9.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point rendah",
+      "Pengaplikasian pada mesin Low-Medium speed",
+      "Digunakan khusus untuk Lem Pilung/lengkungan pada punggung Hardcover"
+    ]
+  },
+  {
+    "nama_produk": "HM BP 2231 (Flake Strip)",
+    "kategori": "Book Pilung",
+    "viscosity_160c": "12.000-15.000",
+    "viscosity_180c": "6.000-9.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point rendah",
+      "Pengaplikasian pada mesin Low-Medium speed",
+      "Digunakan khusus untuk Lem Pilung"
+    ]
+  },
+  {
+    "nama_produk": "HM PG 2400 Y (Flake Strip)",
+    "kategori": "Paper Bag",
+    "viscosity_160c": "3.000-4.500",
+    "viscosity_180c": "1.000-1.900",
+    "softening_point": "100-110°C",
+    "warna": "Kuning",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point Tinggi",
+      "Digunakan untuk Lem Packaging, Tas Kertas, Dll"
+    ]
+  },
+  {
+    "nama_produk": "HM PG 2401 Y (Flake Strip)",
+    "kategori": "Paper Bag",
+    "viscosity_160c": "2.100-3.000",
+    "viscosity_180c": "800-1.500",
+    "softening_point": "100-110°C",
+    "warna": "Kuning",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point Tinggi",
+      "Digunakan khusus untuk Packaging makanan"
+    ]
+  },
+  {
+    "nama_produk": "HM PG 2430 (Flake Strip)",
+    "kategori": "Paper Bag",
+    "viscosity_160c": "5.000-7.000",
+    "viscosity_180c": "2.000-4.000",
+    "softening_point": "90-100°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point Tinggi",
+      "Pengaplikasian dengan mesin kecepatan Medium (Sedang)",
+      "Digunakan khusus untuk Folding Box, Packaging makanan"
+    ]
+  },
+  {
+    "nama_produk": "HM PG 2470 Y (Flake Strip)",
+    "kategori": "Paper Bag",
+    "viscosity_160c": "12.000-15.000",
+    "viscosity_180c": "6.000-9.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "",
+    "keunggulan": [
+      "Softening Point Rendah",
+      "Digunakan khusus untuk Lem Packaging Manual"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "nama_produk":"FG 803 HY",
+    "viscocity":"3.500-7.000",
+    "open_time":"10-20 second",
+    "brix":"55-60",
+    "ph":">5,5",
+    "suhu":"55-60°C",
+    "keunggulan":[
+      "Digunakan untuk Case maker dan Casing in",
+      "Pengaplikasian pada mesin Medium-High speed (Hurauf)"
+    ]
+  },
+  {
+    "nama_produk":"FG 803 MY",
+    "viscocity":"3.500-7.000",
+    "open_time":"15-24 second",
+    "brix":"50-60",
+    "ph":">5,5",
+    "suhu":"50-60°C",
+    "keunggulan":[
+      "Digunakan untuk Case maker dan Casing in",
+      "Pengaplikasian pada mesin Medium speed (Hurauf)"
+    ]
+  },
+  {
+    "nama_produk":"FG 803 LY",
+    "viscocity":"3.500-7.000",
+    "open_time":"17-26 second",
+    "brix":"50-60",
+    "ph":">5,5",
+    "suhu":"55-60°C",
+    "keunggulan":[
+      "Digunakan untuk Case maker dan Casing in",
+      "Pengaplikasian pada mesin Low speed (Qolbus)"
+    ]
+  },
+  {
+    "nama_produk":"FG 804 MY",
+    "viscocity":"5.000-9.000",
+    "open_time":"10-15 second",
+    "brix":"55-60",
+    "ph":">5,5",
+    "suhu":"55-60°C",
+    "keunggulan":[
+      "Digunakan untuk Case maker dan Casing in",
+      "Pengaplikasian pada mesin Medium speed (Hurauf)"
+    ]
+  }
+]

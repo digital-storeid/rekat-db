@@ -1,0 +1,265 @@
+[
+  {
+    "nama_produk": "WB LM 6150",
+    "base": "VAE",
+    "solid_content": "55 ± 2",
+    "viscocity": "5.500 - 6.500",
+    "ph": "6 - 8",
+    "dry_speed": "25 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Laminating, Hardcover, Window patching, Casemaker untuk kertas laminasi ke board",
+    "perbedaan": "Memiliki solid content dan viskositas tinggi, cocok untuk aplikasi roller hardcover.",
+    "keunggulan": [
+      "Dapat digunakan untuk aplikasi hardcover roller",
+      "Dapat digunakan untuk aplikasi hardcover manual",
+      "Daya rekat tinggi untuk substrat kertas halus"
+    ]
+  },
+    {
+    "nama_produk": "WB LM 6154",
+    "base": "VAE",
+    "solid_content": "53 ± 2",
+    "viscocity": "3.500 - 7.500",
+    "ph": "4 - 7",
+    "dry_speed": "25 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Laminasi kertas | Pilung buku",
+    "perbedaan": "Memiliki solid content dan viskositas tinggi, cocok untuk aplikasi roller hardcover.",
+    "keunggulan": [
+      "Dapat digunakan untuk aplikasi laminasi kertas",
+      "Dapat digunakan untuk aplikasi pilung buku secara manual"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6050",
+    "base": "VAE",
+    "solid_content": "53 ± 2",
+    "viscocity": "2.500 - 6.500",
+    "ph": "5 - 7",
+    "dry_speed": "5 - 15 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Paper Duplex, Packaging, Skiblat Al-Quran, Lem samping",
+    "perbedaan": "Dry speed lebih cepat dibanding PO 6052, tahan kelembaban tinggi.",
+    "keunggulan": [
+      "Tidak berbau Solvent",
+      "Tahan terhadap kelembaban tinggi",
+      "Daya rekat kuat",
+      "Dapat digunakan pada kertas secara umum",
+      "Cocok untuk skiblat Al-Quran dan Kertas Duplex"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6052",
+    "base": "VAE",
+    "solid_content": "50 ± 2",
+    "viscocity": "2.500 - 5.000",
+    "ph": "5 - 7",
+    "dry_speed": "15 - 30 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Paper, packaging, skiblat, lem samping Al Quran",
+    "perbedaan": "Viskositas lebih rendah dari PO 6050, cocok untuk mesin Kolbus.",
+    "keunggulan": [
+      "Tidak Berbau",
+      "Pengaplikasian pada substrat kertas matte/halus",
+      "Aplikasi dapat digunakan untuk mesin Kolbus"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6040",
+    "base": "VAE",
+    "solid_content": "48 ± 2",
+    "viscocity": "10.000 - 15.000",
+    "ph": "5 - 7",
+    "dry_speed": "15 - 30 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Casemaker untuk kertas matte ke board (Hardcover, Matte Paper, packaging)",
+    "perbedaan": "Viskositas sangat tinggi, khusus untuk kecepatan mesin rendah.",
+    "keunggulan": [
+      "Tidak Berbau",
+      "Pengaplikasian pada substrat kertas matte",
+      "Aplikasi dengan mesin kecepatan rendah"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6151",
+    "base": "VAE",
+    "solid_content": "53 ± 2",
+    "viscocity": "2.000 - 4.000",
+    "ph": "4 - 6",
+    "dry_speed": "15 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Folding Box (Samping)",
+    "perbedaan": "Viskositas rendah, membutuhkan treatment plasma/amplas pada substrat.",
+    "keunggulan": [
+      "Dapat digunakan pada substrat ivory laminasi 1 sisi",
+      "Dapat digunakan pada substrat ivory waterbase & UV",
+      "Dapat digunakan pada substrat duplex waterbase & UV",
+      "Dapat digunakan jenis kertas ivory metalized",
+      "Pengaplikasian pada Roller dengan kecepatan tinggi",
+      "Catatan: Perlu treatment plasma/amplas dan perforasi di substrate"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6152",
+    "base": "VAE",
+    "solid_content": "53 ± 2",
+    "viscocity": "600 - 1.000",
+    "ph": "4 - 6",
+    "dry_speed": "10 - 15 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Folding Box (Lem crash lock bottom box)",
+    "perbedaan": "Viskositas paling rendah di kelas LM, khusus untuk nozzle kecepatan tinggi.",
+    "keunggulan": [
+      "Dapat digunakan pada substrat ivory laminasi 1 sisi",
+      "Dapat digunakan pada substrat ivory waterbase & UV",
+      "Dapat digunakan pada substrat duplex waterbase & UV",
+      "Dapat digunakan jenis kertas ivory metalized",
+      "Pengaplikasian pada Nozzle dengan kecepatan tinggi",
+      "Catatan: Perlu treatment plasma/amplas dan perforasi di substrate"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6140",
+    "base": "VAE",
+    "solid_content": "40 ± 2",
+    "viscocity": "3.000 - 5.000",
+    "ph": "6 - 8",
+    "dry_speed": "35 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Laminasi plastik ke kertas",
+    "perbedaan": "Daya rekat lebih baik dibanding LM 6131, solid content lebih tinggi.",
+    "keunggulan": [
+      "Tidak berbau solvent",
+      "Daya rekat lebih baik dibanding LM 6131",
+      "Pengaplikasian pada roller mesin khusus laminasi plastik ke kertas"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6131",
+    "base": "VAE",
+    "solid_content": "30 ± 2",
+    "viscocity": "4.000 - 6.000",
+    "ph": "6 - 8",
+    "dry_speed": "40 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Laminasi plastik ke kertas",
+    "perbedaan": "Viskositas lebih kental dari LM 6140, grade ekonomis (low grade).",
+    "keunggulan": [
+      "Tidak berbau solvent",
+      "Cairan lebih kental dibanding LM 6140",
+      "Pengaplikasian pada roller mesin khusus laminasi plastik ke kertas (low grade)"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6130",
+    "base": "VAE",
+    "solid_content": "38 ± 2",
+    "viscocity": "3.000 - 5.000",
+    "ph": "6 - 8",
+    "dry_speed": "50 - 60 detik",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "BoardBook",
+    "perbedaan": "Waktu kering paling lama, khusus aplikasi manual screen.",
+    "keunggulan": [
+      "Pengaplikasian pada Boardbook dengan substrat ivory",
+      "Penggunaan dengan manual screen ukuran T77"
+    ]
+  },
+  {
+    "nama_produk": "WB W 4430 (INBOND)",
+    "base": "PVAc",
+    "solid_content": "30 ± 2",
+    "viscocity": "70.000 - 120.000",
+    "ph": "7 - 9",
+    "dry_speed": "60 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Karton Box, Paper Bag Craft, Casemaker, Hardcover",
+    "perbedaan": "Viskositas paling tinggi di kelas PVAc, dapat diencerkan dengan air.",
+    "keunggulan": [
+      "Viskositas paling tinggi, dapat diencerkan sesuai kebutuhan (air)",
+      "Untuk pengaplikasian secara manual"
+    ]
+  },
+  {
+    "nama_produk": "WB DB 4230",
+    "base": "PVAc",
+    "solid_content": "32 ± 1",
+    "viscocity": "50.000 - 90.000",
+    "ph": "7 - 9",
+    "dry_speed": "50 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Karton Box, Paper Bag Craft, Casemaker, Hardcover",
+    "perbedaan": "Tekstur kental dengan daya tutup yang sangat baik.",
+    "keunggulan": [
+      "Kental",
+      "Daya rekat kuat pada substrat dan daya tutup yang baik",
+      "Pengaplikasian secara manual untuk dempul buku"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4021",
+    "base": "PVAc",
+    "solid_content": "25 ± 2",
+    "viscocity": "10.000 - 15.000",
+    "ph": "7 - 9",
+    "dry_speed": "30 - 50 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Karton Box, Paper Bag Craft, Casemaker, Hardcover",
+    "perbedaan": "Viskositas sedang, fleksibel untuk mesin kecepatan rendah-sedang.",
+    "keunggulan": [
+      "Sedikit kental",
+      "Dapat digunakan pada substrat kertas ke kertas secara umum",
+      "Dapat digunakan secara manual",
+      "Pengaplikasian dapat menggunakan mesin kecepatan sedang ke rendah"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4024",
+    "base": "PVAc",
+    "solid_content": "28 ± 2",
+    "viscocity": "1.500 - 3.500",
+    "ph": "5 - 7",
+    "dry_speed": "20 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Folding Corrugated, Flute Laminator",
+    "perbedaan": "Lebih encer, khusus untuk aplikasi flute laminator.",
+    "keunggulan": [
+      "Lebih encer",
+      "Dapat digunakan pada Folding corrugated single wall",
+      "Dapat digunakan untuk Flute Laminator Single Face substrat duplex dan ivory",
+      "Pengaplikasian dengan Roller"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 5010",
+    "base": "PVOH",
+    "solid_content": "15 ± 2",
+    "viscocity": "20.000 - 40.000",
+    "ph": "7 - 9",
+    "dry_speed": "80 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Karton Box, Paper Bag Craft",
+    "perbedaan": "Lebih kental dibanding WB PO 5011, base PVOH.",
+    "keunggulan": [
+      "Lebih kental dibanding WB PO 5011",
+      "Dapat digunakan pada Folding corrugated single wall",
+      "Pengaplikasian manual untuk karton Box"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 5011",
+    "base": "PVOH",
+    "solid_content": "16 ± 2",
+    "viscocity": "7.000 - 10.000",
+    "ph": "7 - 9",
+    "dry_speed": "90 detik",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Karton Box, Paper Bag Craft",
+    "perbedaan": "Kekentalan lebih encer dan waktu kering lebih lambat dari PO 5010.",
+    "keunggulan": [
+      "Kekentalan lebih encer dan kecepatan kering lebih lambat",
+      "Dapat digunakan pada lem Karton Box",
+      "Pengaplikasian pada mesin Medium to Low speed"
+    ]
+  }
+]

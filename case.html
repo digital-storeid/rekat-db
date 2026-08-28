@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendala & Solusi - Rekat Adhesive</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 
+                            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { 
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            bottom: -100px; right: -100px;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.04) 0%, transparent 70%);
+            pointer-events: none; z-index: -1;
+        }
+
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .highlight { 
+            background-color: #fef3c7; 
+            color: #92400e; 
+            padding: 0 2px; 
+            border-radius: 2px; 
+            font-weight: 600;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-enter {
+            animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col font-sans">
+
+	<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200 shadow-sm">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			
+			<div class="flex items-center justify-between h-16">
+				<a href="index.html" class="flex items-center gap-3 flex-shrink-0 group" aria-label="Rekat Adhesive Home">
+					<div class="relative flex-shrink-0">
+						<img
+							src="favicon.ico"
+							alt="Rekat Adhesive Logo"
+							class="w-9 h-9 sm:w-10 sm:h-10 object-contain transition-transform duration-300 group-hover:scale-105">
+					</div>
+					<span class="text-lg sm:text-xl font-bold tracking-tight text-slate-900 whitespace-nowrap">
+						Rekat <span class="text-brand-600">Adhesive</span>
+					</span>
+				</a>
+
+				<nav class="hidden md:flex items-center gap-2" aria-label="Main Navigation">
+					<a href="index.html"
+					   class="h-10 px-4 inline-flex items-center rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600 transition-all duration-200">
+					   Home
+					</a>
+
+					<a href="case.html"
+					   class="h-10 px-4 inline-flex items-center rounded-lg text-sm font-medium text-brand-600 bg-brand-50 font-semibold">
+					   Kendala
+					</a>
+
+					<a href="https://drive.google.com/drive/u/0/folders/1Dy0IVlelLcgxN3M5i5m-UULURNXY-8w6"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="h-10 px-5 inline-flex items-center rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-600/25 transition-all duration-200 transform hover:-translate-y-0.5">
+						<i class="ph ph-google-drive-logo text-lg mr-2"></i>
+						Google Drive
+					</a>
+				</nav>
+
+				<button id="mobile-menu-btn" 
+						type="button"
+						aria-label="Toggle Menu" 
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+						class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors duration-200 focus:outline-none">
+					<i id="burger-icon" class="ph ph-list text-2xl"></i>
+					<i id="close-icon" class="ph ph-x text-2xl hidden"></i>
+				</button>
+			</div>
+
+			<div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 py-3 space-y-2">
+				<nav class="space-y-1.5" aria-label="Mobile Navigation">
+					<a href="index.html"
+					   class="flex items-center h-11 px-4 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600 transition-all">
+					   Home
+					</a>
+
+					<a href="case.html"
+					   class="flex items-center h-11 px-4 rounded-lg text-sm font-semibold text-brand-600 bg-brand-50 transition-all">
+					   Kendala
+					</a>
+
+					<a href="https://drive.google.com/drive/u/0/folders/1Dy0IVlelLcgxN3M5i5m-UULURNXY-8w6"
+					   target="_blank"
+					   rel="noopener noreferrer"
+					   class="flex items-center justify-center h-11 px-4 rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 transition-all shadow-sm">
+					   <i class="ph ph-google-drive-logo text-lg mr-2"></i> Google Drive
+					</a>
+				</nav>
+			</div>
+
+			<div class="pb-4 pt-1 space-y-3">
+				<div class="relative group">
+					<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+						<i class="ph ph-magnifying-glass text-slate-400 text-lg group-focus-within:text-brand-500 transition"></i>
+					</div>
+					<input type="text" id="searchInput" 
+						class="block w-full pl-10 pr-10 py-2.5 border border-slate-200 rounded-xl bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition sm:text-sm shadow-sm" 
+						placeholder="Cari kendala, gejala, atau solusi...">
+					<button id="clearSearchBtn" class="absolute inset-y-0 right-0 pr-3 flex items-center hidden text-slate-400 hover:text-red-500">
+						<i class="ph-fill ph-x-circle text-lg"></i>
+					</button>
+				</div>
+
+				<div class="flex gap-2 overflow-x-auto no-scrollbar pb-1">
+					<select id="filterApp" class="flex-1 min-w-[140px] bg-white border border-slate-200 text-slate-700 text-xs rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 block p-2.5 shadow-sm outline-none cursor-pointer">
+						<option value="">Semua Aplikasi</option>
+					</select>
+					
+					<select id="filterPriority" class="flex-1 min-w-[120px] bg-white border border-slate-200 text-slate-700 text-xs rounded-xl focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 block p-2.5 shadow-sm outline-none cursor-pointer">
+						<option value="">Semua Prioritas</option>
+						<option value="high">🔴 High</option>
+						<option value="medium">🟡 Medium</option>
+						<option value="low">🟢 Low</option>
+					</select>
+
+					<button onclick="resetFilters()" class="px-3 py-2.5 bg-white border border-slate-200 text-slate-600 rounded-xl hover:bg-slate-50 hover:text-brand-600 transition shadow-sm" title="Reset Filter">
+						<i class="ph ph-arrows-counter-clockwise text-lg"></i>
+					</button>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
+        
+        <div class="flex justify-between items-center mb-5">
+            <h2 id="resultCount" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Memuat data...</h2>
+            <div id="dbStatus" class="hidden"></div>
+        </div>
+        
+        <div id="skeletonContainer" class="space-y-4">
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 animate-pulse h-44 shadow-sm"></div>
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 animate-pulse h-44 shadow-sm"></div>
+        </div>
+
+        <div id="cardContainer" class="grid grid-cols-1 gap-4"></div>
+
+        <div id="emptyState" class="hidden flex-col items-center justify-center py-16 text-center bg-white rounded-2xl border border-dashed border-slate-300 mt-2 shadow-sm">
+            <div class="bg-slate-50 p-4 rounded-full mb-4">
+                <i class="ph ph-magnifying-glass text-3xl text-slate-400"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">Tidak Ditemukan</h3>
+            <p class="text-slate-500 text-xs mt-1 max-w-xs mx-auto">Coba gunakan kata kunci lain atau reset filter pencarian Anda.</p>
+        </div>
+    </main>
+
+    <footer class="bg-slate-50 border-t border-slate-200 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
+                
+                <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left opacity-95 hover:opacity-100 transition-opacity duration-300">
+                    <img src="favicon.ico" alt="Logo" class="w-9 h-9 object-contain drop-shadow-sm">
+                    <div class="leading-tight">
+                        <span class="block text-sm sm:text-base font-bold text-slate-800 tracking-wider">REKAT ADHESIVE</span>
+                        <span class="block text-xs text-slate-500 font-medium mt-0.5">Internal Database System</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-2 text-xs text-slate-500 bg-slate-100/80 px-3 py-1.5 rounded-full border border-slate-200/60">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="font-medium text-slate-600">Secure System Connected</span>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-slate-500 text-xs font-medium mb-1">© 2026 All rights reserved.</p>
+                    <p class="text-xs text-slate-500">Dev by <a href="#" class="font-semibold text-brand-600 hover:text-brand-700 hover:underline underline-offset-2 transition-colors">Toron</a></p>
+                </div>
+            </div>
+
+            <div class="md:hidden mt-5 pt-3 border-t border-slate-200/60 flex justify-between items-center text-xs text-slate-500 font-medium">
+                <span class="font-mono text-slate-400">v2.0.1</span>
+                <span class="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full text-[11px] border border-emerald-200/50">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Online
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- MOBILE MENU INTERACTION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const burgerIcon = document.getElementById('burger-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if(menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                    mobileMenu.classList.toggle('hidden');
+                    menuBtn.setAttribute('aria-expanded', !isExpanded);
+                    burgerIcon.classList.toggle('hidden');
+                    closeIcon.classList.toggle('hidden');
+                });
+            }
+            loadData();
+        });
+
+        // --- CORE APPLICATION LOGIC ---
+        let allData = [];
+        const elements = {
+            cardContainer: document.getElementById('cardContainer'),
+            skeletonContainer: document.getElementById('skeletonContainer'),
+            emptyState: document.getElementById('emptyState'),
+            resultCount: document.getElementById('resultCount'),
+            dbStatus: document.getElementById('dbStatus'),
+            searchInput: document.getElementById('searchInput'),
+            clearBtn: document.getElementById('clearSearchBtn'),
+            filterApp: document.getElementById('filterApp'),
+            filterPriority: document.getElementById('filterPriority')
+        };
+
+        // Memperbaiki kebocoran instansiasi debounce
+        function debounce(func, delay) {
+            let timeout;
+            return function(...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
+
+        function highlightText(text, term) {
+            if (!term || !text) return text;
+            const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+            return text.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+
+        function formatAppName(name) {
+            return name ? name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'General';
+        }
+
+        function getPriorityConfig(p) {
+            const map = {
+                high: { color: 'text-red-600', bg: 'bg-red-50', border: 'border-red-100', icon: 'ph-warning-circle', label: 'High' },
+                medium: { color: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-100', icon: 'ph-arrow-up', label: 'Medium' },
+                low: { color: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-100', icon: 'ph-check-circle', label: 'Low' }
+            };
+            return map[p] || map.low;
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch('database.json');
+                if (!res.ok) throw new Error('Gagal memuat database');
+                allData = await res.json();
+                
+                populateFilters();
+                applyFiltersAndRender();
+                updateStatus(true);
+                
+                if(elements.skeletonContainer) {
+                    elements.skeletonContainer.style.display = 'none';
+                }
+            } catch (err) {
+                if(elements.skeletonContainer) elements.skeletonContainer.style.display = 'none';
+                elements.resultCount.textContent = "Gagal Memuat Data Database";
+                console.error(err);
+            }
+        }
+
+        function populateFilters() {
+            const apps = [...new Set(allData.map(i => i.application))].sort();
+            elements.filterApp.innerHTML = '<option value="">Semua Aplikasi</option>';
+            apps.forEach(app => {
+                const opt = document.createElement('option');
+                opt.value = app;
+                opt.textContent = formatAppName(app);
+                elements.filterApp.appendChild(opt);
+            });
+        }
+
+        function updateStatus(success) {
+            if(success && elements.dbStatus) {
+                elements.dbStatus.innerHTML = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold"><i class="ph-fill ph-check-circle"></i> Sistem Live</span>`;
+                elements.dbStatus.classList.remove('hidden');
+            }
+        }
+
+        function renderCards(data) {
+            elements.cardContainer.innerHTML = '';
+            const term = elements.searchInput.value.trim().toLowerCase();
+
+            if (data.length === 0) {
+                elements.emptyState.classList.remove('hidden');
+                elements.emptyState.classList.add('flex');
+                elements.resultCount.textContent = "0 HASIL";
+                return;
+            }
+
+            elements.emptyState.classList.add('hidden');
+            elements.emptyState.classList.remove('flex');
+            elements.resultCount.textContent = `${data.length} SOLUSI DITEMUKAN`;
+
+            const fragment = document.createDocumentFragment();
+            data.forEach((item, idx) => {
+                const p = getPriorityConfig(item.priority);
+                const div = document.createElement('div');
+                div.className = `card-enter bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-200 transition-all duration-300 overflow-hidden relative group`;
+                div.style.animationDelay = `${idx * 0.03}s`;
+
+                // Gabungkan string penyebab jika bentuknya array untuk fungsi highlight
+                const rawCauses = Array.isArray(item.possible_causes) ? item.possible_causes.join(', ') : (item.possible_causes || '');
+
+                div.innerHTML = `
+                    <div class="absolute top-0 left-0 w-1 h-full ${p.color.replace('text', 'bg').replace('600', '500')}"></div>
+                    
+                    <div class="p-4 sm:p-5 pl-5 sm:pl-6">
+                        <div class="flex justify-between items-start gap-3 mb-3">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1.5">
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-slate-100 text-slate-600 border border-slate-200">
+                                        ${formatAppName(item.application)}
+                                    </span>
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase ${p.bg} ${p.color} border ${p.border} flex items-center gap-1">
+                                        <i class="ph-fill ${p.icon}"></i> ${p.label}
+                                    </span>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-bold text-slate-800 leading-snug">
+                                    ${highlightText(item.problem, term)}
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="md:col-span-1 space-y-2">
+                                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1">
+                                    <i class="ph ph-eye"></i> Gejala
+                                </p>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${(item.symptoms || []).map(s => 
+                                        `<span class="text-[11px] bg-slate-50 text-slate-600 px-2 py-1 rounded border border-slate-100/80">${highlightText(s, term)}</span>`
+                                    ).join('')}
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-emerald-50/40 rounded-xl p-3 border border-emerald-100/50">
+                                    <p class="text-[10px] font-bold text-emerald-700 uppercase mb-2 flex items-center gap-1">
+                                        <i class="ph-fill ph-wrench"></i> Solusi Rekomendasi
+                                    </p>
+                                    <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside marker:text-emerald-500">
+                                        ${(item.recommended_actions || []).map(a => 
+                                            `<li>${highlightText(a, term)}</li>`
+                                        ).join('')}
+                                    </ul>
+                                </div>
+
+                                <div class="bg-amber-50/40 rounded-xl p-3 border border-amber-100/50">
+                                    <p class="text-[10px] font-bold text-amber-700 uppercase mb-2 flex items-center gap-1">
+                                        <i class="ph-fill ph-lightning"></i> Kemungkinan Penyebab
+                                    </p>
+                                    <p class="text-xs text-slate-700 leading-relaxed">
+                                        ${highlightText(rawCauses, term)}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        ${(item.machine_parameters_to_check || []).length > 0 ? `
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[10px] text-slate-500 font-mono">
+                            <i class="ph ph-gauge"></i>
+                            <span>Parameter Mesin:</span>
+                            <span class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-700 font-semibold">${item.machine_parameters_to_check.join(', ')}</span>
+                        </div>` : ''}
+                    </div>
+                `;
+                fragment.appendChild(div);
+            });
+            elements.cardContainer.appendChild(fragment);
+        }
+
+        function applyFiltersAndRender() {
+            const term = elements.searchInput.value.toLowerCase().trim();
+            const app = elements.filterApp.value;
+            const prio = elements.filterPriority.value;
+
+            const filtered = allData.filter(item => {
+                const searchContent = [
+                    item.problem, 
+                    item.category, 
+                    ...(item.symptoms || []), 
+                    ...(item.recommended_actions || []),
+                    ...(Array.isArray(item.possible_causes) ? item.possible_causes : [item.possible_causes])
+                ].join(' ').toLowerCase();
+
+                return (term === '' || searchContent.includes(term)) &&
+                       (!app || item.application === app) &&
+                       (!prio || item.priority === prio);
+            });
+
+            renderCards(filtered);
+        }
+
+        // Deklarasi fungsi proses debounce sekali agar timer bekerja optimal
+        const processSearch = debounce(() => applyFiltersAndRender(), 250);
+
+        // Event Listeners
+        elements.searchInput.addEventListener('input', (e) => {
+            elements.clearBtn.classList.toggle('hidden', e.target.value === '');
+            processSearch();
+        });
+
+        elements.clearBtn.addEventListener('click', () => {
+            elements.searchInput.value = '';
+            elements.clearBtn.classList.add('hidden');
+            elements.searchInput.focus();
+            applyFiltersAndRender();
+        });
+
+        elements.filterApp.addEventListener('change', applyFiltersAndRender);
+        elements.filterPriority.addEventListener('change', applyFiltersAndRender);
+
+        window.resetFilters = function() {
+            elements.searchInput.value = '';
+            elements.filterApp.value = '';
+            elements.filterPriority.value = '';
+            elements.clearBtn.classList.add('hidden');
+            applyFiltersAndRender();
+        }
+    </script>
+</body>
+</html>
