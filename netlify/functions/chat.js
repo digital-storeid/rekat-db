@@ -1,131 +1,47 @@
-const OpenAI = require("openai");
+const OpenAI = require('openai');
 
-exports.handler = async (event) => {
-  // Hanya menerima POST
-  if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      headers: {
-        "Content-Type": "application/json",
-        "Allow": "POST",
-      },
-      body: JSON.stringify({
-        error: "Method not allowed",
-      }),
-    };
+exports.handler = async (event, context) => {
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: JSON.stringify({ error: 'Method not allowed' }) };
   }
 
   try {
-    // Cek API key
-    if (!process.env.NVIDIA_API_KEY) {
-      console.error("NVIDIA_API_KEY belum dikonfigurasi");
-      return {
-        statusCode: 500,
-        body: JSON.stringify({
-          error: "Konfigurasi AI belum tersedia",
-        }),
-      };
-    }
+    const { message } = JSON.parse(event.body);
 
-    // Parse request
-    let body;
-
-    try {
-      body = JSON.parse(event.body || "{}");
-    } catch {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({
-          error: "Format JSON tidak valid",
-        }),
-      };
-    }
-
-    const message = body.message;
-
-    // Validasi message
-    if (!message || typeof message !== "string") {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({
-          error: "Message wajib diisi",
-        }),
-      };
-    }
-
-    if (message.length > 10000) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({
-          error: "Message terlalu panjang",
-        }),
-      };
-    }
-
-    // NVIDIA API menggunakan OpenAI-compatible API
-    const openai = new OpenAI({
-      apiKey: process.env.NVIDIA_API_KEY,
-      baseURL: "https://integrate.api.nvidia.com/v1",
+    const client = new OpenAI({
+      baseURL: process.env.AI_BASE_URL, 
+      apiKey: process.env.AI_API_KEY, 
     });
 
-    // Request ke NVIDIA
-    const completion = await openai.chat.completions.create({
-      model: "deepseek-ai/deepseek-v4-pro-0813",
-
+    const completion = await client.chat.completions.create({
+      model: process.env.AI_MODEL,
       messages: [
-        {
-          role: "system",
-          content:
-            "Kamu adalah asisten virtual Rekat Adhesive. " +
-            "Jawablah pertanyaan tentang produk lem Rekat Adhesive " +
-            "dengan profesional, ramah, jelas, dan singkat. " +
-            "Jika pertanyaan tidak berkaitan dengan produk atau layanan Rekat Adhesive, " +
-            "jawab secara singkat dan arahkan kembali ke produk Rekat Adhesive.",
+        { 
+          role: "system", 
+          content: "Kamu adalah asisten virtual Rekat Adhesive. Bantu pengguna menemukan informasi tentang produk lem dan adhesive." 
         },
-        {
-          role: "user",
-          content: message.trim(),
-        },
+        { 
+          role: "user", 
+          content: message 
+        }
       ],
-
-      temperature: 1,
-      top_p: 0.95,
-      max_tokens: 16384,
-      seed: 42,
-
-      extra_body: {
-        chat_template_kwargs: {
-          thinking: false,
-        },
-      },
-
-      stream: false,
+      temperature: 0.7,
+      max_tokens: 1024
     });
-
-    const response =
-      completion?.choices?.[0]?.message?.content ||
-      "Maaf, saya belum dapat memberikan jawaban.";
 
     return {
       statusCode: 200,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        response,
-      }),
+      body: JSON.stringify({ response: completion.choices[0].message.content })
     };
-  } catch (error) {
-    console.error("NVIDIA API Error:", error);
 
+  } catch (error) {
+    console.error("AI Error:", error);
     return {
       statusCode: 500,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        error: "Gagal memproses permintaan AI",
-      }),
+      body: JSON.stringify({ 
+        error: 'Gagal terhubung ke AI', 
+        details: error.message 
+      })
     };
   }
 };
