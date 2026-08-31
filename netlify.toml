@@ -1,3 +1,7 @@
 [build]
   functions = "netlify/functions"
-  publish = "public"
+
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200

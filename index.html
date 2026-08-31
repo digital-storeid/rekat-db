@@ -224,9 +224,9 @@
         <!-- Input Area -->
         <div class="p-3 bg-white border-t border-slate-100">
             <form id="chat-form" class="flex gap-2">
-                <input type="text" id="chat-input" placeholder="Ketik pesan..." 
-                    class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all">
-                <button type="submit" class="bg-brand-600 hover:bg-brand-700 text-white p-2.5 rounded-xl transition-colors flex items-center justify-center">
+                <input type="text" id="chat-input" placeholder="Ketik pesan (maks 1000 karakter)..." maxlength="1000"
+                    class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all disabled:opacity-50">
+                <button type="submit" class="bg-brand-600 hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed text-white p-2.5 rounded-xl transition-colors flex items-center justify-center">
                     <i class="ph-bold ph-paper-plane-right"></i>
                 </button>
             </form>
@@ -552,13 +552,16 @@ function renderStatBox(label, value) {
     `;
 }
 
-// --- LOGIKA CHAT AI (UPDATED FOR NETLIFY) ---
+// --- LOGIKA CHAT AI (OPENROUTER + REASONING + ADHESIVE-ONLY) ---
 const chatToggleBtn = document.getElementById('chat-toggle-btn');
 const chatWindow = document.getElementById('chat-window');
 const closeChatBtn = document.getElementById('close-chat-btn');
 const chatForm = document.getElementById('chat-form');
 const chatInput = document.getElementById('chat-input');
 const chatMessages = document.getElementById('chat-messages');
+const chatSubmitBtn = chatForm.querySelector('button[type="submit"]');
+// History untuk preservation reasoning_details (sesuai contoh Python OpenRouter)
+let chatHistory = [];
 
 function toggleChat() {
     const isHidden = chatWindow.classList.contains('hidden');
@@ -605,12 +608,26 @@ chatForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const text = chatInput.value.trim();
     if (!text) return;
+    if (text.length < 2) {
+        addMessage('Pesan terlalu pendek. Minimal 2 karakter.', 'bot');
+        return;
+    }
+    if (text.length > 1000) {
+        addMessage('Pesan terlalu panjang. Maksimal 1000 karakter.', 'bot');
+        return;
+    }
 
     // 1. Tampilkan pesan user
     addMessage(text, 'user');
     chatInput.value = '';
+    // Simpan ke history untuk reasoning preservation
+    chatHistory.push({ role: 'user', content: text });
+    // Batasi history 20 pesan terakhir untuk hemat token
+    if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
 
-    // 2. Tampilkan indikator loading
+    // 2. Tampilkan indikator loading + disable input
+    chatInput.disabled = true;
+    if (chatSubmitBtn) chatSubmitBtn.disabled = true;
     const loadingId = 'loading-' + Date.now();
     const loadingDiv = document.createElement('div');
     loadingDiv.id = loadingId;
@@ -631,13 +648,13 @@ chatForm.addEventListener('submit', async (e) => {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     try {
-        // Panggil Netlify Function
+        // Panggil Netlify Function dengan history + reasoning_details (sesuai contoh Python OpenRouter)
         const res = await fetch('/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ message: text })
+            body: JSON.stringify({ messages: chatHistory })
         });
 
         const data = await res.json();
@@ -645,16 +662,34 @@ chatForm.addEventListener('submit', async (e) => {
         // Hapus loading
         document.getElementById(loadingId)?.remove();
 
-        if (data.response) {
+        if (res.ok && data.response) {
             addMessage(data.response, 'bot');
+            // Simpan assistant response dengan reasoning_details untuk continuity (jika ada)
+            if (data.message_with_reasoning) {
+                chatHistory.push(data.message_with_reasoning);
+            } else if (data.reasoning_details) {
+                chatHistory.push({ role: 'assistant', content: data.response, reasoning_details: data.reasoning_details });
+            } else {
+                chatHistory.push({ role: 'assistant', content: data.response });
+            }
+            if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
         } else {
-            addMessage('Maaf, terjadi kesalahan pada server. Silakan coba lagi nanti.', 'bot');
+            // Tampilkan pesan error dari server (429, 500, dll) tanpa bocorkan detail sensitif
+            const errMsg = data.error || 'Maaf, terjadi kesalahan pada server. Silakan coba lagi nanti.';
+            addMessage(errMsg, 'bot');
+            // Hapus user message terakhir dari history jika gagal, agar bisa retry
+            chatHistory.pop();
         }
 
     } catch (error) {
         document.getElementById(loadingId)?.remove();
         addMessage('Maaf, tidak dapat terhubung ke server. Periksa koneksi internet Anda.', 'bot');
+        chatHistory.pop();
         console.error('Chat error:', error);
+    } finally {
+        chatInput.disabled = false;
+        if (chatSubmitBtn) chatSubmitBtn.disabled = false;
+        chatInput.focus();
     }
 });
 
