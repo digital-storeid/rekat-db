@@ -257,9 +257,10 @@ exports.handler = async (event, context) => {
       console.log("Reasoning details received:", JSON.stringify(msg.reasoning_details).slice(0, 800));
     }
 
+    const MODEL_NAME = process.env.OPENROUTER_MODEL || "inclusionai/ling-3.0-flash-fin:free";
     // For single-turn compatibility, return just content. For multi-turn clients, they can request reasoning_details via separate flag.
     // We return content + optional reasoning_details if client sent history (to allow preservation)
-    const responseBody = { response: msg.content };
+    const responseBody = { response: msg.content, model: MODEL_NAME };
     // If client was using history mode, include reasoning_details so they can preserve it next turn (as per your Python example)
     if (historyMessages.length > 0 && msg.reasoning_details) {
       responseBody.reasoning_details = msg.reasoning_details;
