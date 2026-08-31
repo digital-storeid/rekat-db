@@ -216,18 +216,21 @@
   {
     "nama_produk": "WB PO 4021",
     "base": "PVAc",
-    "solid_content": "25 ± 2",
+    "solid_content": "25 ± 3",
     "viscocity": "10.000 - 15.000",
-    "ph": "7 - 9",
+    "ph": "5 - 8",
     "dry_speed": "30 - 50 detik",
-    "ciri_fisik": "Cairan viscous putih",
+    "ciri_fisik": "Cairan Putih Kekuningan",
     "pengaplikasian": "Karton Box, Paper Bag Craft, Casemaker, Hardcover",
     "perbedaan": "Viskositas sedang, fleksibel untuk mesin kecepatan rendah-sedang.",
     "keunggulan": [
       "Sedikit kental",
       "Dapat digunakan pada substrat kertas ke kertas secara umum",
       "Dapat digunakan secara manual",
-      "Pengaplikasian dapat menggunakan mesin kecepatan sedang ke rendah"
+      "Pengaplikasian dapat menggunakan mesin kecepatan sedang ke rendah",
+      "Cocok untuk industri kemasan dan percetakan",
+      "Cocok untuk aplikasi hardcover dan casemaker",
+      "Dapat digunakan pada handicraft, carton, box, dan berbagai aplikasi sejenis."
     ]
   },
   {
@@ -288,10 +291,12 @@
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih susu, encer dan mengalir",
     "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 3.000 - 6.000 pada 28°C, solid 55 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "perbedaan": "Viskositas 3.000 - 6.000 pada 28°C, solid 55 ± 2, base VAE, untuk Kertas,  plastik ke kertas dan packaging umum",
     "keunggulan": [
       "Berbasis VAE, tidak berbau solvent",
-      "Cocok untuk permukaan halus"
+      "Cocok untuk laminasi kertas dan perekat permukaan halus",
+      "Memiliki daya rekat yang baik untuk aplikasi plastik ke kertas",
+      "Sesuai untuk berbagai aplikasi berbasis kertas, termasuk board book."
     ]
   },
   {
@@ -302,11 +307,14 @@
     "ph": "4.5 - 6.5",
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih susu, encer dan mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 2.500 - 3.700 pada 28°C, solid 53 - 57, base VAE, untuk Kertas dan packaging umum",
+    "pengaplikasian": "Kertas dan laminasi plastik dengan substrat berpori",
+    "perbedaan": "Viskositas 2.500 - 3.700 pada 28°C, solid 53 - 57, base VAE, untuk Kertas dan laminasi plastik dengan substrat berpori",
     "keunggulan": [
       "Lapisan perekat fleksibel",
-      "Berbasis VAE, tidak berbau solvent"
+      "Cocok untuk merekatkan substrat berpori maupun tidak berpori",
+      "Mampu merekatkan material yang sulit direkatkan, seperti PVC, metalized film, dan material plastik",
+      "Cocok untuk berbagai material kertas, lacquered paper, dan board",
+      "Dapat digunakan untuk laminasi plastik dengan substrat berpori."
     ]
   },
   {
@@ -320,8 +328,11 @@
     "pengaplikasian": "Kertas dan packaging umum",
     "perbedaan": "Viskositas 3.500 - 4.500 pada 28°C, solid 54 - 56, base VAE, untuk Kertas dan packaging umum",
     "keunggulan": [
-      "Lapisan perekat fleksibel",
-      "Berbasis VAE, tidak berbau solvent"
+      "Cocok untuk merekatkan substrat berpori maupun tidak berpori",
+      "Mampu merekatkan material yang sulit direkatkan, seperti PVC, metalized film, dan material plastik",
+      "Cocok untuk berbagai material kertas, lacquered paper, dan board",
+      "Dapat digunakan untuk laminasi plastik dengan substrat berpori",
+      "Cocok untuk laminasi tekstil menggunakan blade coater."
     ]
   },
   {
@@ -336,7 +347,11 @@
     "perbedaan": "Viskositas 1.500 - 2.500 pada 28°C, solid 54.5, base VAE, untuk Kertas dan packaging umum",
     "keunggulan": [
       "Daya rekat kuat",
-      "Berbasis VAE, tidak berbau solvent"
+      "Berbasis air dan bebas plastisizer",
+      "Memiliki kemampuan proses yang baik",
+      "Memiliki viskositas basah yang tinggi",
+      "Memiliki daya rekat baik pada substrat berpori maupun tidak berpori",
+      "Cocok untuk berbagai aplikasi perekatan."
     ]
   },
   {
@@ -350,8 +365,12 @@
     "pengaplikasian": "Aplikasi stiker",
     "perbedaan": "Viskositas 1.000 - 2.000 pada 28°C, solid 56 ± 1, base Acrylic, untuk Aplikasi stiker",
     "keunggulan": [
-      "Daya rekat kuat",
-      "Waktu pengeringan cepat"
+      "Bebas APEO",
+      "Daya rekat awal baik",
+      "Waktu pengeringan cepat",
+      "Cocok untuk material berbasis HDPE",
+      "Kekuatan kohesi moderat dan fleksibilitas aplikasi",
+      "Cocok untuk PSA (Pressure-Sensitive Adhesive) dalam aplikasi stiker dan label." 
     ]
   },
   {
@@ -361,12 +380,12 @@
     "viscocity": "200.000 - 300.000",
     "ph": "7 - 9",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan viscous putih",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 200.000 - 300.000 pada 28°C, solid 28 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "ciri_fisik": "Cairan putih susu",
+    "pengaplikasian": "Kardus",
+    "perbedaan": "Viskositas 200.000 - 300.000 pada 28°C, solid 28 ± 3, base PVAc, untuk Kardus",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi kardus"
     ]
   },
   {
@@ -376,27 +395,31 @@
     "viscocity": "25.000 - 30.000",
     "ph": "6 - 8",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan viscous putih",
+    "ciri_fisik": "Cairan putih",
     "pengaplikasian": "Kertas dan packaging umum",
     "perbedaan": "Viskositas 25.000 - 30.000 pada 28°C, solid 30 ± 3, base PVAc, untuk Kertas dan packaging umum",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi kertas dan packaging",
+      "Cocok sebagai perekat untuk berbagai aplikasi kertas",
+      "Cocok untuk hardcover, paper bag, dan casemaker",
+      "Dapat digunakan untuk carton, box, dan berbagai produk berbasis kertas lainnya."
     ]
   },
   {
     "nama_produk": "WB PO 4025",
-    "base": "VAE",
+    "base": "PVAc",
     "solid_content": "25 ± 2",
-    "viscocity": "5 - 20",
+    "viscocity": "Approx - 200.000",
     "ph": "4 - 6",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 5 - 20 pada 28°C, solid 25 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "ciri_fisik": "Cairan putih kecoklatan",
+    "pengaplikasian": "Karton box dan Corrugated box.",
+    "perbedaan": "Viskositas 5 - 20 pada 28°C, solid 25 ± 2, base VAE, untuk Karton box dan Corrugated box",
     "keunggulan": [
-      "Berbasis VAE, tidak berbau solvent",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok sebagai perekat untuk industri kertas",
+      "Cocok untuk aplikasi karton box dan corrugated box",
+      "Dapat digunakan untuk berbagai kebutuhan perekatan pada produk berbasis kertas."
     ]
   },
   {
@@ -407,26 +430,30 @@
     "ph": "5 - 8",
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 5.000 - 8.000 pada 28°C, solid 31 ± 1, base PVAc, untuk Kertas dan packaging umum",
+    "pengaplikasian": "Paper cone dan Paper tube",
+    "perbedaan": "Viskositas 5.000 - 8.000 pada 28°C, solid 31 ± 1, base PVAc, untuk Paper cone dan Paper tube",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi perekat pada produk kertas",
+      "Direkomendasikan untuk paper cone dan paper tube",
+      "Sesuai untuk berbagai aplikasi perekatan berbasis kertas"
     ]
   },
   {
     "nama_produk": "WB PO 4031",
     "base": "PVAc",
     "solid_content": "33 ± 2",
-    "viscocity": "3.000 - 7.000",
+    "viscocity": "3.000 - 5.000",
     "ph": "3 - 8",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 3.000 - 7.000 pada 28°C, solid 33 ± 2, base PVAc, untuk Kertas dan packaging umum",
+    "ciri_fisik": "Cairan putih susu",
+    "pengaplikasian": "Paper cone, paper tube, dan tube winding",
+    "perbedaan": "Viskositas 3.000 - 5.000 pada 28°C, solid 33 ± 2, base PVAc, untuk Paper cone, paper tube, dan tube winding",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi flute laminasi",
+      "Sesuai untuk paper cone, paper tube, dan tube winding",
+      "Dapat digunakan untuk berbagai aplikasi laminasi dan perekatan berbasis kertas"
     ]
   },
   {
@@ -436,12 +463,14 @@
     "viscocity": "1.000 - 2.000",
     "ph": "6 - 9",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
+    "ciri_fisik": "Cairan putih krem",
     "pengaplikasian": "Kertas dan packaging umum",
     "perbedaan": "Viskositas 1.000 - 2.000 pada 28°C, solid 33 ± 3, base PVAc, untuk Kertas dan packaging umum",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk laminasi kertas",
+      "Sesuai untuk aplikasi flute laminasi dan perekat kertas",
+      "Dapat digunakan untuk berbagai kebutuhan perekatan berbasis kertas"
     ]
   },
   {
@@ -451,12 +480,14 @@
     "viscocity": "40.000 - 70.000",
     "ph": "6 - 8",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan viscous putih",
+    "ciri_fisik": "Cairan putih susu encer mengalir",
     "pengaplikasian": "Paper to paper lamination",
     "perbedaan": "Viskositas 40.000 - 70.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Paper to paper lamination",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi perekat pada produk kertas",
+      "Sesuai untuk karton box dan aplikasi craft",
+      "Cocok untuk laminasi kertas ke kertas secara umum."
     ]
   },
   {
@@ -466,12 +497,14 @@
     "viscocity": "1.000 - 3.000",
     "ph": "6 - 9",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 1.000 - 3.000 pada 28°C, solid 40 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "ciri_fisik": "Cairan putih susu encer mengalir",
+    "pengaplikasian": "Packaging flute laminating dan handicraft",
+    "perbedaan": "Viskositas 1.000 - 3.000 pada 28°C, solid 40 ± 3, base PVAc, untuk Packaging flute laminating dan handicraft",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi pada industri pengemasan",
+      "Sesuai untuk flute laminating dan handicraft",
+      "Dapat digunakan pada carton, box, dan berbagai aplikasi kemasan lainnya."
     ]
   },
   {
@@ -481,7 +514,7 @@
     "viscocity": "20.000 - 40.000",
     "ph": "4 - 6",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
+    "ciri_fisik": "Cairan putih kekuningan",
     "pengaplikasian": "Kertas dan packaging umum",
     "perbedaan": "Viskositas 20.000 - 40.000 pada 28°C, solid 40 ± 1, base PVAc, untuk Kertas dan packaging umum",
     "keunggulan": [
@@ -511,12 +544,13 @@
     "viscocity": "2.000 - 6.000",
     "ph": "6 - 8",
     "dry_speed": "Cepat",
-    "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 2.000 - 6.000 pada 28°C, solid 50 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "ciri_fisik": "Cairan putih susu encer mengalir",
+    "pengaplikasian": "Angle board",
+    "perbedaan": "Viskositas 2.000 - 6.000 pada 28°C, solid 50 ± 3, base PVAc, untuk Angle board",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi angle board",
+      "Sesuai untuk pembuatan pelindung sudut berbahan kertas/karton."
     ]
   },
   {
@@ -527,11 +561,12 @@
     "ph": "4 - 6",
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 1.500 - 3.000 pada 28°C, solid 52 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "pengaplikasian": "Label pada botol kemasan.",
+    "perbedaan": "Viskositas 1.500 - 3.000 pada 28°C, solid 52 ± 3, base PVAc, untuk Label pada botol kemasan.",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi lem label pada botol kemasan",
+      "Sesuai untuk perekatan label pada berbagai jenis botol kemasan"
     ]
   },
   {
@@ -542,11 +577,14 @@
     "ph": "6 - 8",
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 580 - 1.100 pada 28°C, solid 38 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "pengaplikasian": "Kertas, packaging umum, dan folder gluer",
+    "perbedaan": "Viskositas 580 - 1.100 pada 28°C, solid 38 ± 2, base VAE, untuk Kertas, packaging umum, dan folder gluer",
     "keunggulan": [
       "Berbasis VAE, tidak berbau solvent",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi perekat pada produk kertas",
+      "Sesuai untuk box, paper bag, dan folder gluer",
+      "Dapat digunakan untuk berbagai aplikasi lem kertas lainnya",
+      "Cocok untuk aplikasi dengan sistem nozzle."
     ]
   },
   {
@@ -557,11 +595,12 @@
     "ph": "6 - 8",
     "dry_speed": "Cepat",
     "ciri_fisik": "Cairan putih susu, encer dan mengalir",
-    "pengaplikasian": "Kertas dan packaging umum",
-    "perbedaan": "Viskositas 2.000 - 5.000 pada 28°C, solid 52 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "pengaplikasian": "Laminasi kertas dan hardcover",
+    "perbedaan": "Viskositas 2.000 - 5.000 pada 28°C, solid 52 ± 2, base VAE, untuk Laminasi kertas dan hardcover",
     "keunggulan": [
       "Berbasis VAE, tidak berbau solvent",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk laminasi kertas",
+      "Sesuai untuk aplikasi hardcover"
     ]
   },
   {
@@ -576,7 +615,7 @@
     "perbedaan": "Viskositas 20.000 - 40.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Kertas dan kayu",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi kertas dan kayu"
     ]
   },
   {
@@ -591,7 +630,7 @@
     "perbedaan": "Viskositas 6.000 - 10.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Kertas dan kayu",
     "keunggulan": [
       "Berbasis PVAc, daya rekat kuat",
-      "Cocok untuk aplikasi kertas dan packaging"
+      "Cocok untuk aplikasi kertas dan kayu"
     ]
   }
 ]
