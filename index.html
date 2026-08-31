@@ -96,6 +96,7 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+        /* Mencegah zoom otomatis pada input di iOS */
         @media (max-width: 768px) {
             input, select, textarea { font-size: 16px !important; }
         }
@@ -209,9 +210,9 @@
 <div id="chat-widget-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
     
     <!-- Chat Window -->
-    <div id="chat-window" class="hidden w-[90vw] sm:w-96 backdrop-blur-xl bg-white/90 rounded-2xl shadow-[0_20px_60px_rgba(37,99,235,0.15)] border border-white/20 ring-1 ring-white/10 overflow-hidden flex flex-col h-[500px] max-h-[80vh] chat-pop-in">
+    <div id="chat-window" class="hidden w-[92vw] sm:w-96 backdrop-blur-xl bg-white/90 rounded-2xl shadow-[0_20px_60px_rgba(37,99,235,0.15)] border border-white/20 ring-1 ring-white/10 overflow-hidden flex flex-col h-[500px] max-h-[80vh] chat-pop-in">
         <!-- Header -->
-        <div class="bg-gradient-to-br from-brand-600 to-indigo-600 p-4 flex items-center justify-between text-white relative overflow-hidden">
+        <div class="bg-gradient-to-br from-brand-600 to-indigo-600 p-3 flex items-center justify-between text-white relative overflow-hidden">
             <div class="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
             <div class="absolute -left-8 -bottom-8 w-24 h-24 bg-indigo-400/20 rounded-full blur-xl pointer-events-none"></div>
             <div class="flex items-center gap-3 relative z-10">
@@ -234,13 +235,13 @@
         </div>
 
         <!-- Messages Area -->
-        <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50 custom-scrollbar">
+        <div id="chat-messages" class="flex-1 overflow-y-auto p-3 space-y-3 bg-slate-50 custom-scrollbar">
             <!-- Welcome Message -->
-            <div class="flex gap-3">
-                <div class="w-8 h-8 bg-brand-100 rounded-full flex-shrink-0 flex items-center justify-center text-brand-600">
-                    <i class="ph-fill ph-robot text-sm"></i>
+            <div class="flex gap-2">
+                <div class="w-7 h-7 bg-brand-100 rounded-full flex-shrink-0 flex items-center justify-center text-brand-600 mt-1">
+                    <i class="ph-fill ph-robot text-xs"></i>
                 </div>
-                <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-sm text-slate-700 max-w-[85%]">
+                <div class="bg-white p-2.5 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-xs text-slate-700 max-w-[85%] leading-relaxed">
                     Halo! 👋 Saya asisten virtual Rekat Adhesive. Ada yang bisa saya bantu mengenai produk lem atau adhesive hari ini?
                 </div>
             </div>
@@ -253,19 +254,19 @@
 
         <!-- Quick Prompts -->
         <div id="quick-prompts" class="px-3 pt-2 pb-0 bg-white flex gap-1.5 overflow-x-auto no-scrollbar">
-            <button type="button" class="prompt-chip shrink-0 bg-brand-50 hover:bg-brand-100 text-brand-700 text-xs px-3 py-1.5 rounded-full border border-brand-100 font-medium" data-prompt="Rekomendasi laminasi untuk kertas art paper?">Rekomendasi laminasi</button>
-            <button type="button" class="prompt-chip shrink-0 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs px-3 py-1.5 rounded-full border border-indigo-100 font-medium" data-prompt="Bedanya VAE vs PVAc untuk adhesive?">Bedanya VAE vs PVAc?</button>
-            <button type="button" class="prompt-chip shrink-0 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs px-3 py-1.5 rounded-full border border-emerald-100 font-medium" data-prompt="Cara atasi bubble laminasi dan solusinya?">Atasi bubble laminasi</button>
-            <button type="button" class="prompt-chip shrink-0 bg-orange-50 hover:bg-orange-100 text-orange-700 text-xs px-3 py-1.5 rounded-full border border-orange-100 font-medium" data-prompt="WB untuk hardcover yang cocok apa?">WB untuk hardcover?</button>
+            <button type="button" class="prompt-chip shrink-0 bg-brand-50 hover:bg-brand-100 text-brand-700 text-[10px] px-2.5 py-1.5 rounded-full border border-brand-100 font-medium" data-prompt="Rekomendasi laminasi untuk kertas art paper?">Rekomendasi laminasi</button>
+            <button type="button" class="prompt-chip shrink-0 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-[10px] px-2.5 py-1.5 rounded-full border border-indigo-100 font-medium" data-prompt="Bedanya VAE vs PVAc untuk adhesive?">Bedanya VAE vs PVAc?</button>
+            <button type="button" class="prompt-chip shrink-0 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-[10px] px-2.5 py-1.5 rounded-full border border-emerald-100 font-medium" data-prompt="Cara atasi bubble laminasi dan solusinya?">Atasi bubble laminasi</button>
+            <button type="button" class="prompt-chip shrink-0 bg-orange-50 hover:bg-orange-100 text-orange-700 text-[10px] px-2.5 py-1.5 rounded-full border border-orange-100 font-medium" data-prompt="WB untuk hardcover yang cocok apa?">WB untuk hardcover?</button>
         </div>
 
         <!-- Input Area -->
         <div class="p-3 bg-white border-t border-slate-100">
             <form id="chat-form" class="flex gap-2">
-                <input type="text" id="chat-input" placeholder="Ketik pesan (maks 1000 karakter)..." maxlength="1000"
-                    class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all disabled:opacity-50">
+                <input type="text" id="chat-input" placeholder="Ketik pesan..." maxlength="1000"
+                    class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all disabled:opacity-50">
                 <button type="submit" class="bg-brand-600 hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed text-white p-2.5 rounded-xl transition-colors flex items-center justify-center">
-                    <i class="ph-bold ph-paper-plane-right"></i>
+                    <i class="ph-bold ph-paper-plane-right text-sm"></i>
                 </button>
             </form>
         </div>
@@ -632,7 +633,7 @@ function formatBotText(text){
     let t = escapeHtml(text);
     t = t.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
     t = t.replace(/\*(.+?)\*/g, '<i>$1</i>');
-    t = t.replace(/`(.+?)`/g, '<code class="bg-slate-100 px-1 py-0.5 rounded text-xs font-mono">$1</code>');
+    t = t.replace(/`(.+?)`/g, '<code class="bg-slate-100 px-1 py-0.5 rounded text-[10px] font-mono">$1</code>');
     t = t.replace(/^- (.+)$/gm, '• $1');
     t = t.replace(/\n/g, '<br>');
     return t;
@@ -641,12 +642,14 @@ function addMessage(text, sender) {
     const div = document.createElement('div');
     const isUser = sender === 'user';
     
-    div.className = `flex gap-3 ${isUser ? 'flex-row-reverse' : ''}`;
+    // DIUBAH: Gap lebih kecil, avatar lebih kecil (w-7 h-7)
+    div.className = `flex gap-2 ${isUser ? 'flex-row-reverse' : ''}`;
     
     const avatar = isUser 
-        ? `<div class="w-8 h-8 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-slate-600"><i class="ph-fill ph-user text-sm"></i></div>`
-        : `<div class="w-8 h-8 bg-gradient-to-br from-brand-600 to-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white shadow-sm"><i class="ph-fill ph-robot text-sm"></i></div>`;
+        ? `<div class="w-7 h-7 bg-slate-200 rounded-full flex-shrink-0 flex items-center justify-center text-slate-600 mt-1"><i class="ph-fill ph-user text-xs"></i></div>`
+        : `<div class="w-7 h-7 bg-gradient-to-br from-brand-600 to-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white shadow-sm mt-1"><i class="ph-fill ph-robot text-xs"></i></div>`;
         
+    // DIUBAH: Font size text-xs, padding p-2.5
     const bubbleClass = isUser
         ? 'bg-brand-600 text-white rounded-tr-none shadow-sm'
         : 'bg-white text-slate-700 rounded-tl-none border border-slate-100 shadow-sm';
@@ -657,7 +660,7 @@ function addMessage(text, sender) {
 
     div.innerHTML = `
         ${avatar}
-        <div class="relative ${bubbleClass} p-3 rounded-2xl text-sm max-w-[85%] break-words">
+        <div class="relative ${bubbleClass} p-2.5 rounded-2xl text-xs max-w-[85%] break-words leading-relaxed">
             <div class="msg-content">${formattedText}</div>
             ${copyBtn}
         </div>
@@ -702,15 +705,15 @@ chatForm.addEventListener('submit', async (e) => {
     const loadingId = 'loading-' + Date.now();
     const loadingDiv = document.createElement('div');
     loadingDiv.id = loadingId;
-    loadingDiv.className = 'flex gap-3';
+    loadingDiv.className = 'flex gap-2';
     loadingDiv.innerHTML = `
-        <div class="w-8 h-8 bg-gradient-to-br from-brand-600 to-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white shadow-sm">
-            <i class="ph-fill ph-robot text-sm animate-pulse"></i>
+        <div class="w-7 h-7 bg-gradient-to-br from-brand-600 to-indigo-600 rounded-full flex-shrink-0 flex items-center justify-center text-white shadow-sm mt-1">
+            <i class="ph-fill ph-robot text-xs animate-pulse"></i>
         </div>
-        <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-sm text-slate-700 min-w-[180px]">
-            <div class="shimmer h-2.5 rounded-full mb-2 w-3/4"></div>
-            <div class="shimmer h-2.5 rounded-full w-1/2"></div>
-            <p class="text-[11px] text-slate-400 mt-2 flex items-center gap-1"><span class="w-1 h-1 bg-brand-500 rounded-full animate-ping"></span> Rekat AI sedang berpikir...</p>
+        <div class="bg-white p-2.5 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-xs text-slate-700 min-w-[180px]">
+            <div class="shimmer h-2 rounded-full mb-2 w-3/4"></div>
+            <div class="shimmer h-2 rounded-full w-1/2"></div>
+            <p class="text-[10px] text-slate-400 mt-1 flex items-center gap-1"><span class="w-1 h-1 bg-brand-500 rounded-full animate-ping"></span> Rekat AI sedang berpikir...</p>
         </div>
     `;
     chatMessages.appendChild(loadingDiv);
