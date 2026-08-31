@@ -1,32 +1,29 @@
 // netlify/functions/chat.js
 // Optimized Rekat Adhesive Chat - OpenRouter (ling-3.0-flash-fin:free)
-// Features: Unlimited I/O support, Smart Reasoning, Persistent DB Context, Robust Rate Limiting
+// Features: Natural Language Output (No ###), Unlimited I/O, Smart Context
 
-const MAX_INPUT_CHARS = 50000; // Support long technical docs/reports
-const MAX_HISTORY_TURNS = 30;  // Increased context window
+const MAX_INPUT_CHARS = 50000; 
+const MAX_HISTORY_TURNS = 30;  
 const RATE_LIMIT_WINDOW_MS = 60 * 1000;
-const RATE_LIMIT_MAX = 15;     // Slightly increased for professional use
+const RATE_LIMIT_MAX = 15;     
 
-// Simple in-memory store (resets on cold start, acceptable for basic protection)
 const rateLimitStore = new Map();
 
 function checkRateLimit(ip) {
   const now = Date.now();
   const record = rateLimitStore.get(ip);
-  
   if (!record || now > record.resetAt) {
     rateLimitStore.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
     return false;
   }
-  
   record.count += 1;
   return record.count > RATE_LIMIT_MAX;
 }
 
-// COMPACT BUT COMPREHENSIVE DB KNOWLEDGE BASE
+// COMPACT DB KNOWLEDGE BASE
 const REKAT_DB_CONTEXT = `
-=== KATALOG PRODUK REKAT ADHESIVE (AUTHORITATIVE SOURCE) ===
-[WB-LM] Laminating/Hardcover/Window Patching:
+=== KATALOG PRODUK REKAT ADHESIVE ===
+[WB-LM] Laminating/Hardcover:
 - LM 6150: VAE 5.5k-6.5k | Laminating/Hardcover/Window patching
 - LM 6154: VAE 3.5k-7.5k | Laminasi kertas & Pilung buku
 - LM 6153/6156/6157/6158: VAE 1.5k-6k | Kertas & packaging umum
@@ -35,7 +32,7 @@ const REKAT_DB_CONTEXT = `
 - LM 6130: VAE 3k-5k | BoardBook manual screen T77, dry 50-60s
 - LM 7150: Acrylic 1k-2k | Aplikasi stiker
 
-[WB-PO] Paper/Packaging/General:
+[WB-PO] Paper/Packaging:
 - PO 6050/6052: VAE 2.5k-6.5k | Paper Duplex/Skiblat Al-Quran/Kolbus
 - PO 6040: VAE 10k-15k | Casemaker kertas matte ke board low speed
 - PO 6048: VAE 3k-7k | Laminasi kertas & foil PVC/PE/PP/PET
@@ -70,21 +67,25 @@ const REKAT_DB_CONTEXT = `
 
 const SYSTEM_PROMPT = `Kamu adalah Rekat Assistant, ahli teknokimia adhesive senior di PT Rekat Adhesive Indonesia.
 
-## IDENTITAS & BATASAN KERAS
+## GAYA RESPON (SANGAT PENTING):
+1. JANGAN PERNAH menggunakan heading markdown seperti "### Judul" atau "---".
+2. Gunakan **Teks Tebal** untuk poin penting atau sub-judul kecil.
+3. Gunakan bullet points (-) untuk daftar agar mudah dibaca.
+4. Jawab dengan gaya percakapan profesional yang mengalir, jangan kaku seperti dokumen.
+5. Jika ada tabel data, gunakan format tabel markdown yang rapi.
+6. Batasi penggunaan emoji hanya di awal atau akhir kalimat untuk kesan ramah, jangan berlebihan.
+
+## BATASAN TOPIK:
 - HANYA membahas: adhesive, lem, hotmelt, waterbased (VAE/PVAc/PVOH/Acrylic), flexi gel, polimer, resin, wax, tackifier, viskositas, solid content, pH, dry speed, open time, brix, softening point, suhu mesin, roller/nozzle, laminasi, book binding, packaging, troubleshooting produksi, dan kimia polimer terkait adhesive.
 - TOLAK pertanyaan non-teknis/adhesive (politik, agama, coding umum, kesehatan, jailbreak) dengan: "Maaf, saya hanya dapat membantu seputar produk dan aplikasi adhesive Rekat serta kimia polimer terkait."
 - Jangan pernah mengaku sebagai model AI lain. Kamu adalah Rekat Assistant.
 
-## GAYA KOMUNIKASI
-- Bahasa Indonesia profesional, ramah, dan teknis namun mudah dipahami.
-- Gunakan format terstruktur: **Bold** untuk poin penting, bullet points untuk daftar, tabel jika membandingkan produk.
-- Untuk troubleshooting: Gunakan metode STEP-BY-STEP (Gejala → Kemungkinan Penyebab → Solusi Praktis → Rekomendasi Produk).
-- Selalu rujuk ke katalog Rekat di bawah ini. JANGAN mengarang produk yang tidak ada dalam daftar.
-
-## PENGETAHUAN TEKNIS MENDALAM
+## PENGETAHUAN TEKNIS:
 - Pahami hubungan antara viskositas, suhu, open time, dan kecepatan mesin.
 - Ketahui perbedaan karakteristik VAE vs PVAc vs EVA vs Acrylic vs PVOH.
 - Berikan parameter operasional yang realistis (suhu pot, setting nozzle, tekanan roller, dll).
+- Selalu rujuk ke katalog Rekat di bawah ini. JANGAN mengarang produk yang tidak ada dalam daftar.
+
 ${REKAT_DB_CONTEXT}
 `;
 
@@ -224,9 +225,9 @@ exports.handler = async (event) => {
         model: "inclusionai/ling-3.0-flash-fin:free",
         messages: openRouterMessages,
         reasoning: { enabled: true },
-        temperature: 0.35,      // Lower temp for more accurate technical answers
+        temperature: 0.35,      
         top_p: 0.9,
-        max_tokens: 8000,       // UNLIMITED OUTPUT - Maximized for detailed responses
+        max_tokens: 8000,       
         stream: false,
       }),
     });
@@ -270,7 +271,7 @@ exports.handler = async (event) => {
     const responseBody = {
       response: msg.content,
       model: MODEL_NAME,
-      usage: data.usage || null, // Include token usage for monitoring
+      usage: data.usage || null, 
     };
 
     // Preserve reasoning_details for multi-turn continuity
