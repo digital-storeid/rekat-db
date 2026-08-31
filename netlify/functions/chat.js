@@ -77,6 +77,9 @@ const DB_SUMMARY_COMPACT =
   "HM PG 2401 Y:Paper Bag EVA SP100-110C visc160 2.1k-3k food packaging; " +
   "HM PG 2430:Paper Bag EVA SP90-100C visc160 5k-7k Folding Box; " +
   "HM PG 2470 Y:Paper Bag EVA SP70-80C visc160 12k-15k manual; " +
+  "HM PG 2401 C:Paper Bag EVA SP105-112C visc160 2.1k-3k Bening food packaging; " +
+  "HM SG 2171:Side Glue EVA SP70-80C visc160 6k-8k Putih Roller; " +
+  "HM SG 2171 Y:Side Glue EVA SP70-80C visc160 6k-8k Kuning Roller; " +
   "FG 803 HY:FG 3.500-7.000 open10-20s suhu55-60C Casemaker Hurauf Med-High; " +
   "FG 803 MY:FG 3.500-7.000 open15-24s suhu50-60C Hurauf Med; " +
   "FG 803 LY:FG 3.500-7.000 open17-26s suhu55-60C Qolbus Low; " +

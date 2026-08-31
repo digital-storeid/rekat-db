@@ -65,7 +65,7 @@
       "Softening Point rendah"
     ]
   },
-    {
+  {
     "nama_produk": "HM BB 2073",
     "kategori": "Book Binding",
     "viscosity_160c": "12.000-16.000",
@@ -221,6 +221,57 @@
     "keunggulan": [
       "Softening Point Rendah",
       "Digunakan khusus untuk Lem Packaging Manual"
+    ]
+  },
+  {
+    "nama_produk": "HM PG 2401 C (Flake Strip)",
+    "kategori": "Paper Bag",
+    "viscosity_160c": "2.100-3.000",
+    "viscosity_180c": "800-1.500",
+    "softening_point": "105-112°C",
+    "warna": "Bening",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "160-180°C",
+    "perbedaan": "Varian Clear/Bening dari PG 2401 Y, softening point 105-112°C untuk food packaging",
+    "keunggulan": [
+      "Warna bening (Clear) untuk kemasan makanan",
+      "Softening Point tinggi 105-112°C",
+      "Digunakan khusus untuk food packaging",
+      "Base EVA Copolymer"
+    ]
+  },
+  {
+    "nama_produk": "HM SG 2171 (Flake Strip)",
+    "kategori": "Side Glue",
+    "viscosity_160c": "6.000-8.000",
+    "viscosity_180c": "3.000-5.000",
+    "softening_point": "70-80°C",
+    "warna": "Putih",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "Generasi terbaru SG 2170, viskositas stabil untuk side binding",
+    "keunggulan": [
+      "Untuk lem samping buku (side binding)",
+      "Viskositas stabil 6.000-8.000 cPs @160°C",
+      "Softening Point 70-80°C",
+      "Pengaplikasian mesin Roller"
+    ]
+  },
+  {
+    "nama_produk": "HM SG 2171 Y (Flake Strip)",
+    "kategori": "Side Glue",
+    "viscosity_160c": "6.000-8.000",
+    "viscosity_180c": "3.000-5.000",
+    "softening_point": "70-80°C",
+    "warna": "Kuning",
+    "base": "EVA Copolymer",
+    "suhu_operasional_mesin": "150-170°C",
+    "perbedaan": "Varian Kuning dari SG 2171, untuk side binding dengan visibilitas",
+    "keunggulan": [
+      "Warna kuning untuk kontrol visual",
+      "Untuk lem samping buku (side binding)",
+      "Viskositas stabil 6.000-8.000 cPs @160°C",
+      "Softening Point 70-80°C"
     ]
   }
 ]
