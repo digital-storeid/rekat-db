@@ -15,7 +15,7 @@
       "Daya rekat tinggi untuk substrat kertas halus"
     ]
   },
-    {
+  {
     "nama_produk": "WB LM 6154",
     "base": "VAE",
     "solid_content": "53 ± 2",
@@ -78,6 +78,23 @@
       "Tidak Berbau",
       "Pengaplikasian pada substrat kertas matte",
       "Aplikasi dengan mesin kecepatan rendah"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6048",
+    "base": "VAE",
+    "solid_content": "48 ± 2",
+    "viscocity": "3.000 - 7.000",
+    "ph": "5.0 - 8.0",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Laminasi kertas dan laminasi foil (PVC, PE, PP, PET) pada sisi foil",
+    "perbedaan": "Khusus laminasi foil pada sisi foil (PVC/PE/PP/PET), viskositas Approx 5.000 ± 2.000 cPs Brookfield RVT Sp 4/30 rpm pada 28°C, solid 48 ± 2",
+    "keunggulan": [
+      "Daya rekat kuat untuk foil PVC/PE/PP/PET",
+      "Waktu pengeringan cepat dan lapisan fleksibel",
+      "Tidak berbau, berbasis VAE ramah lingkungan",
+      "Cocok untuk laminasi kertas ke foil"
     ]
   },
   {
@@ -260,6 +277,321 @@
       "Kekentalan lebih encer dan kecepatan kering lebih lambat",
       "Dapat digunakan pada lem Karton Box",
       "Pengaplikasian pada mesin Medium to Low speed"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6153",
+    "base": "VAE",
+    "solid_content": "55 ± 2",
+    "viscocity": "3.000 - 6.000",
+    "ph": "5 - 7",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 3.000 - 6.000 pada 28°C, solid 55 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis VAE, tidak berbau solvent",
+      "Cocok untuk permukaan halus"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6156",
+    "base": "VAE",
+    "solid_content": "53 - 57",
+    "viscocity": "2.500 - 3.700",
+    "ph": "4.5 - 6.5",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 2.500 - 3.700 pada 28°C, solid 53 - 57, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Lapisan perekat fleksibel",
+      "Berbasis VAE, tidak berbau solvent"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6157",
+    "base": "VAE",
+    "solid_content": "54 - 56",
+    "viscocity": "3.500 - 4.500",
+    "ph": "4.5 - 6.5",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 3.500 - 4.500 pada 28°C, solid 54 - 56, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Lapisan perekat fleksibel",
+      "Berbasis VAE, tidak berbau solvent"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 6158",
+    "base": "VAE",
+    "solid_content": "54.5",
+    "viscocity": "1.500 - 2.500",
+    "ph": "4.5 - 6.5",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 1.500 - 2.500 pada 28°C, solid 54.5, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Daya rekat kuat",
+      "Berbasis VAE, tidak berbau solvent"
+    ]
+  },
+  {
+    "nama_produk": "WB LM 7150",
+    "base": "Acrylic",
+    "solid_content": "56 ± 1",
+    "viscocity": "1.000 - 2.000",
+    "ph": "7.0 - 8.5",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Aplikasi stiker",
+    "perbedaan": "Viskositas 1.000 - 2.000 pada 28°C, solid 56 ± 1, base Acrylic, untuk Aplikasi stiker",
+    "keunggulan": [
+      "Daya rekat kuat",
+      "Waktu pengeringan cepat"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4020",
+    "base": "PVAc",
+    "solid_content": "28 ± 3",
+    "viscocity": "200.000 - 300.000",
+    "ph": "7 - 9",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 200.000 - 300.000 pada 28°C, solid 28 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4022",
+    "base": "PVAc",
+    "solid_content": "30 ± 3",
+    "viscocity": "25.000 - 30.000",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 25.000 - 30.000 pada 28°C, solid 30 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4025",
+    "base": "VAE",
+    "solid_content": "25 ± 2",
+    "viscocity": "5 - 20",
+    "ph": "4 - 6",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 5 - 20 pada 28°C, solid 25 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis VAE, tidak berbau solvent",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4030",
+    "base": "PVAc",
+    "solid_content": "31 ± 1",
+    "viscocity": "5.000 - 8.000",
+    "ph": "5 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 5.000 - 8.000 pada 28°C, solid 31 ± 1, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4031",
+    "base": "PVAc",
+    "solid_content": "33 ± 2",
+    "viscocity": "3.000 - 7.000",
+    "ph": "3 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 3.000 - 7.000 pada 28°C, solid 33 ± 2, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4033",
+    "base": "PVAc",
+    "solid_content": "33 ± 3",
+    "viscocity": "1.000 - 2.000",
+    "ph": "6 - 9",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 1.000 - 2.000 pada 28°C, solid 33 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4035",
+    "base": "PVAc",
+    "solid_content": "30 ± 2",
+    "viscocity": "40.000 - 70.000",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan viscous putih",
+    "pengaplikasian": "Paper to paper lamination",
+    "perbedaan": "Viskositas 40.000 - 70.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Paper to paper lamination",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4040",
+    "base": "PVAc",
+    "solid_content": "40 ± 3",
+    "viscocity": "1.000 - 3.000",
+    "ph": "6 - 9",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 1.000 - 3.000 pada 28°C, solid 40 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4041",
+    "base": "PVAc",
+    "solid_content": "40 ± 1",
+    "viscocity": "20.000 - 40.000",
+    "ph": "4 - 6",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 20.000 - 40.000 pada 28°C, solid 40 ± 1, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4042",
+    "base": "VAE",
+    "solid_content": "40 ± 2",
+    "viscocity": "20.000 - 40.000",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 20.000 - 40.000 pada 28°C, solid 40 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis VAE, tidak berbau solvent",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4050",
+    "base": "PVAc",
+    "solid_content": "50 ± 3",
+    "viscocity": "2.000 - 6.000",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 2.000 - 6.000 pada 28°C, solid 50 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 4052",
+    "base": "PVAc",
+    "solid_content": "52 ± 3",
+    "viscocity": "1.500 - 3.000",
+    "ph": "4 - 6",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 1.500 - 3.000 pada 28°C, solid 52 ± 3, base PVAc, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6030",
+    "base": "VAE",
+    "solid_content": "38 ± 2",
+    "viscocity": "580 - 1.100",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 580 - 1.100 pada 28°C, solid 38 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis VAE, tidak berbau solvent",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB PO 6051",
+    "base": "VAE",
+    "solid_content": "52 ± 2",
+    "viscocity": "2.000 - 5.000",
+    "ph": "6 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih susu, encer dan mengalir",
+    "pengaplikasian": "Kertas dan packaging umum",
+    "perbedaan": "Viskositas 2.000 - 5.000 pada 28°C, solid 52 ± 2, base VAE, untuk Kertas dan packaging umum",
+    "keunggulan": [
+      "Berbasis VAE, tidak berbau solvent",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB W 4431",
+    "base": "PVAc",
+    "solid_content": "30 ± 2",
+    "viscocity": "20.000 - 40.000",
+    "ph": "5 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan kayu",
+    "perbedaan": "Viskositas 20.000 - 40.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Kertas dan kayu",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
+    ]
+  },
+  {
+    "nama_produk": "WB W 4432",
+    "base": "PVAc",
+    "solid_content": "30 ± 2",
+    "viscocity": "6.000 - 10.000",
+    "ph": "5 - 8",
+    "dry_speed": "Cepat",
+    "ciri_fisik": "Cairan putih mengalir",
+    "pengaplikasian": "Kertas dan kayu",
+    "perbedaan": "Viskositas 6.000 - 10.000 pada 28°C, solid 30 ± 2, base PVAc, untuk Kertas dan kayu",
+    "keunggulan": [
+      "Berbasis PVAc, daya rekat kuat",
+      "Cocok untuk aplikasi kertas dan packaging"
     ]
   }
 ]

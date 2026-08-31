@@ -31,6 +31,28 @@ const DB_SUMMARY_COMPACT =
   "WB PO 6050:VAE 2.500-6.500 Paper Duplex/Packaging/Skiblat Al-Quran; " +
   "WB PO 6052:VAE 2.500-5.000 Paper/packaging/skiblat Al-Quran (Kolbus); " +
   "WB PO 6040:VAE 10.000-15.000 Casemaker kertas matte ke board low speed; " +
+  "WB PO 6048:VAE 3.000-7.000 Laminasi kertas & foil PVC/PE/PP/PET (VAE 5000±2000cPs); " +
+  "WB LM 6153:VAE 3.000-6.000 Kertas dan packaging umum; " +
+  "WB LM 6156:VAE 2.500-3.700 Kertas dan packaging umum; " +
+  "WB LM 6157:VAE 3.500-4.500 Kertas dan packaging umum; " +
+  "WB LM 6158:VAE 1.500-2.500 Kertas dan packaging umum; " +
+  "WB LM 7150:Acrylic 1.000-2.000 Aplikasi stiker; " +
+  "WB PO 4020:PVAc 200.000-300.000 Kertas dan packaging umum; " +
+  "WB PO 4022:PVAc 25.000-30.000 Kertas dan packaging umum; " +
+  "WB PO 4025:VAE 5-20 Kertas dan packaging umum; " +
+  "WB PO 4030:PVAc 5.000-8.000 Kertas dan packaging umum; " +
+  "WB PO 4031:PVAc 3.000-7.000 Kertas dan packaging umum; " +
+  "WB PO 4033:PVAc 1.000-2.000 Kertas dan packaging umum; " +
+  "WB PO 4035:PVAc 40.000-70.000 Paper to paper lamination; " +
+  "WB PO 4040:PVAc 1.000-3.000 Kertas dan packaging umum; " +
+  "WB PO 4041:PVAc 20.000-40.000 Kertas dan packaging umum; " +
+  "WB PO 4042:VAE 20.000-40.000 Kertas dan packaging umum; " +
+  "WB PO 4050:PVAc 2.000-6.000 Kertas dan packaging umum; " +
+  "WB PO 4052:PVAc 1.500-3.000 Kertas dan packaging umum; " +
+  "WB PO 6030:VAE 580-1.100 Kertas dan packaging umum; " +
+  "WB PO 6051:VAE 2.000-5.000 Kertas dan packaging umum; " +
+  "WB W 4431:PVAc 20.000-40.000 Kertas dan kayu; " +
+  "WB W 4432:PVAc 6.000-10.000 Kertas dan kayu; " +
   "WB LM 6151:VAE 2.000-4.000 Folding Box Samping (roller high speed, perlu plasma); " +
   "WB LM 6152:VAE 600-1.000 Folding Box crash lock bottom (nozzle high speed); " +
   "WB LM 6140:VAE 3.000-5.000 Laminasi plastik ke kertas; " +
